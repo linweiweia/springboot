@@ -1,0 +1,39 @@
+{
+  "groups": [
+    {
+      "name": "com.user",
+      "type": "com.ww.springboot.model.User",
+      "sourceType": "com.ww.springboot.model.User"
+    },
+    {
+      "name": "my",
+      "type": "com.ww.springboot.model.ConfigBean",
+      "sourceType": "com.ww.springboot.model.ConfigBean"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.user.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.ww.springboot.model.User",
+      "defaultValue": 0
+    },
+    {
+      "name": "com.user.name",
+      "type": "java.lang.String",
+      "sourceType": "com.ww.springboot.model.User"
+    },
+    {
+      "name": "my.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.ww.springboot.model.ConfigBean",
+      "defaultValue": 0
+    },
+    {
+      "name": "my.name",
+      "type": "java.lang.String",
+      "sourceType": "com.ww.springboot.model.ConfigBean"
+    }
+  ],
+  "hints": []
+}
