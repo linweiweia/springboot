@@ -27,12 +27,10 @@ public class MybatisController_2 {
     private DataSource dataSource;
 
     /**
-     * 测试使用druid连接池
-     * 测试集成mybatis
+     * 测试集成mybatis  注意测试id直接写在url后面不用restFuTool的json
      */
     @GetMapping("/findUserByID/{id}")
     public Account findAccByID(@PathVariable("id") Integer id) {
-        System.out.println(dataSource.getClass());
         return accountService.findAccByID(id);
     }
 

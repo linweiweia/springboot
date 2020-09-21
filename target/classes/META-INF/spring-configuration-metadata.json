@@ -9,6 +9,12 @@
       "name": "my",
       "type": "com.ww.springboot.model.ConfigBean",
       "sourceType": "com.ww.springboot.model.ConfigBean"
+    },
+    {
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.ww.springboot.config.DruidConfig",
+      "sourceMethod": "druidDataSource()"
     }
   ],
   "properties": [
