@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/thymeleaf")
 public class ThymeleafController_5 {
 
-    @RequestMapping("test1")
+    @RequestMapping("/test1")
     public String test1(Model model) {
         model.addAttribute("msg", "Hello,Thymeleaf");
-        //返回到resources/templates/index.html
-        return "index";
+        //返回到resources/templates/hello.html
+        return "hello";
     }
 
 }

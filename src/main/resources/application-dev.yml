@@ -1,7 +1,8 @@
 server:
-  port: 8080
+  port: 8888
 
 spring:
+  # 数据库相关
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&serverTimezone=GMT%2B8&zeroDateTimeBehavior=CONVERT_TO_NULL
@@ -32,6 +33,16 @@ spring:
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
 
+
+  #邮箱功能配置
+  mail:
+    username: 1013232063@qq.com
+    # 授权码不是密码
+    password: vzhgondfxyqpbcjd
+    host: smtp.qq.com
+    properties.mail.smtp.ssl.enable: true #开启SSL
+
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.ww.model
@@ -42,8 +53,7 @@ mybatis:
 # 查看哪些自动配置类生效
 debug: true
 
-
-
+#自定义配置
 my:
   name: huhu
   age: 12
